@@ -8,13 +8,15 @@ import { HijoComponent } from "./components/hijo/hijo.component";
 import { MostrarMensajeComponent } from "./components/mostrar-mensaje/mostrar-mensaje.component";
 import { ReplicadorComponent } from "./components/replicador/replicador.component";
 import { SaludarComponent } from "./components/saludar/saludar.component";
+import { ComponenteIfComponent } from "./components/componente-if/componente-if.component";
+import { AgregarTareaComponent } from "./components/agregar-tarea/agregar-tarea.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NuevoComponenteComponent, ComponenteEnLineaComponent, InterpolacionComponent, PadreComponent, HijoComponent, MostrarMensajeComponent, ReplicadorComponent, SaludarComponent],
+  imports: [RouterOutlet, NuevoComponenteComponent, ComponenteEnLineaComponent, InterpolacionComponent, PadreComponent, HijoComponent, MostrarMensajeComponent, ReplicadorComponent, SaludarComponent, ComponenteIfComponent, AgregarTareaComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Two way Binding en Angular';
+  title = 'Local Reference en Angular';
 }
