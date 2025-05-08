@@ -10,13 +10,14 @@ import { ReplicadorComponent } from "./components/replicador/replicador.componen
 import { SaludarComponent } from "./components/saludar/saludar.component";
 import { ComponenteIfComponent } from "./components/componente-if/componente-if.component";
 import { AgregarTareaComponent } from "./components/agregar-tarea/agregar-tarea.component";
+import { ComponenteForComponent } from "./components/componente-for/componente-for.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NuevoComponenteComponent, ComponenteEnLineaComponent, InterpolacionComponent, PadreComponent, HijoComponent, MostrarMensajeComponent, ReplicadorComponent, SaludarComponent, ComponenteIfComponent, AgregarTareaComponent],
+  imports: [RouterOutlet, NuevoComponenteComponent, ComponenteEnLineaComponent, InterpolacionComponent, PadreComponent, HijoComponent, MostrarMensajeComponent, ReplicadorComponent, SaludarComponent, ComponenteIfComponent, AgregarTareaComponent, ComponenteForComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Local Reference en Angular';
+  title = 'Directiva @For en Angular';
 }
