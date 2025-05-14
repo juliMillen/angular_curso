@@ -18,5 +18,5 @@ import { ComponenteForComponent } from "./components/componente-for/componente-f
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Directiva @Input en Angular';
+  title = 'Directiva @Output en Angular';
 }
