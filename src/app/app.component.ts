@@ -4,7 +4,6 @@ import { NuevoComponenteComponent } from "./components/nuevo-componente/nuevo-co
 import { ComponenteEnLineaComponent } from "./components/componente-en-linea/componente-en-linea.component";
 import { InterpolacionComponent } from "./components/interpolacion/interpolacion.component";
 import { PadreComponent } from "./components/padre/padre.component";
-import { HijoComponent } from "./components/hijo/hijo.component";
 import { MostrarMensajeComponent } from "./components/mostrar-mensaje/mostrar-mensaje.component";
 import { ReplicadorComponent } from "./components/replicador/replicador.component";
 import { SaludarComponent } from "./components/saludar/saludar.component";
@@ -14,10 +13,10 @@ import { ComponenteForComponent } from "./components/componente-for/componente-f
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NuevoComponenteComponent, ComponenteEnLineaComponent, InterpolacionComponent, PadreComponent, HijoComponent, MostrarMensajeComponent, ReplicadorComponent, SaludarComponent, ComponenteIfComponent, AgregarTareaComponent, ComponenteForComponent],
+  imports: [RouterOutlet, NuevoComponenteComponent, ComponenteEnLineaComponent, InterpolacionComponent, PadreComponent, MostrarMensajeComponent, ReplicadorComponent, SaludarComponent, ComponenteIfComponent, AgregarTareaComponent, ComponenteForComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Directiva @For en Angular';
+  title = 'Directiva @Input en Angular';
 }
