@@ -10,13 +10,14 @@ import { SaludarComponent } from "./components/saludar/saludar.component";
 import { ComponenteIfComponent } from "./components/componente-if/componente-if.component";
 import { AgregarTareaComponent } from "./components/agregar-tarea/agregar-tarea.component";
 import { ComponenteForComponent } from "./components/componente-for/componente-for.component";
+import { ViewChildComponent } from "./components/view-child/view-child.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NuevoComponenteComponent, ComponenteEnLineaComponent, InterpolacionComponent, PadreComponent, MostrarMensajeComponent, ReplicadorComponent, SaludarComponent, ComponenteIfComponent, AgregarTareaComponent, ComponenteForComponent],
+  imports: [RouterOutlet, NuevoComponenteComponent, ComponenteEnLineaComponent, InterpolacionComponent, PadreComponent, MostrarMensajeComponent, ReplicadorComponent, SaludarComponent, ComponenteIfComponent, AgregarTareaComponent, ComponenteForComponent, ViewChildComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Directiva @Output en Angular';
+  title = 'Decorador @ViewChild en Angular';
 }
