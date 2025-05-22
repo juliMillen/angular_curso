@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, LOCALE_ID } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NuevoComponenteComponent } from "./components/nuevo-componente/nuevo-componente.component";
 import { ComponenteEnLineaComponent } from "./components/componente-en-linea/componente-en-linea.component";
@@ -13,15 +13,23 @@ import { ComponenteForComponent } from "./components/componente-for/componente-f
 import { ViewChildComponent } from "./components/view-child/view-child.component";
 import { MensajeService } from './services/mensaje.service';
 import { ListadoUsuariosComponent } from "./components/listado-usuarios/listado-usuarios.component";
+import { EjemploPipesComponent } from './components/ejemplo-pipes/ejemplo-pipes.component';
+import { registerLocaleData } from '@angular/common';
+import localeEs from '@angular/common/locales/es';
+
+//Registrar los datos de localizacion para español
+registerLocaleData(localeEs, 'es');
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NuevoComponenteComponent, ComponenteEnLineaComponent, InterpolacionComponent, PadreComponent, MostrarMensajeComponent, ReplicadorComponent, SaludarComponent, ComponenteIfComponent, AgregarTareaComponent, ComponenteForComponent, ViewChildComponent, ListadoUsuariosComponent],
+  imports: [RouterOutlet, NuevoComponenteComponent, ComponenteEnLineaComponent, InterpolacionComponent, PadreComponent, MostrarMensajeComponent, ReplicadorComponent, SaludarComponent, ComponenteIfComponent, AgregarTareaComponent, ComponenteForComponent, ViewChildComponent, ListadoUsuariosComponent, EjemploPipesComponent],
+  providers: [{provide: LOCALE_ID, useValue: 'es'}],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Servicios y Observables en Angular';
+  title = 'Pipes en Angular';
 
   mensaje:string;
 
