@@ -16,6 +16,7 @@ import { ListadoUsuariosComponent } from "./components/listado-usuarios/listado-
 import { EjemploPipesComponent } from './components/ejemplo-pipes/ejemplo-pipes.component';
 import { registerLocaleData } from '@angular/common';
 import localeEs from '@angular/common/locales/es';
+import { NavegacionComponent } from "./components/navegacion/navegacion.component";
 
 //Registrar los datos de localizacion para español
 registerLocaleData(localeEs, 'es');
@@ -23,7 +24,7 @@ registerLocaleData(localeEs, 'es');
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NuevoComponenteComponent, ComponenteEnLineaComponent, InterpolacionComponent, PadreComponent, MostrarMensajeComponent, ReplicadorComponent, SaludarComponent, ComponenteIfComponent, AgregarTareaComponent, ComponenteForComponent, ViewChildComponent, ListadoUsuariosComponent, EjemploPipesComponent],
+  imports: [RouterOutlet, NuevoComponenteComponent, ComponenteEnLineaComponent, InterpolacionComponent, PadreComponent, MostrarMensajeComponent, ReplicadorComponent, SaludarComponent, ComponenteIfComponent, AgregarTareaComponent, ComponenteForComponent, ViewChildComponent, ListadoUsuariosComponent, EjemploPipesComponent, NavegacionComponent],
   providers: [{provide: LOCALE_ID, useValue: 'es'}],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-mostrar-mensaje',
@@ -6,9 +7,14 @@ import { Component } from '@angular/core';
   templateUrl: './mostrar-mensaje.component.html',
   styleUrl: './mostrar-mensaje.component.css'
 })
-export class MostrarMensajeComponent {
+export class MostrarMensajeComponent implements OnInit{
 mensaje: string = '';
 
+constructor(private route:ActivatedRoute){}
+
+ngOnInit(){
+  this.mensaje = this.route.snapshot.queryParams['mensaje'];
+}
 
 resetearMensaje() {
   this.mensaje = '';
